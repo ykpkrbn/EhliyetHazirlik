@@ -319,12 +319,43 @@ List<SoruModeli> sorular = [
     },
   ),
   SoruModeli(
-    "31) Geceleyin, görüşün yeterli olmadığı kavşağa yaklaşan sürücü gelişini nasıl haber vermelidir?",
+    "31) Şekildeki trafik işareti hangi yol bölümünde bulunur?",
     {
-      "Birkaç defa selektör yaparak": true,
-      "Acil uyarı ışıklarını yakarak": false,
-      "Bir kaç defa korna çalarak": false,
-      "Dönüş ışıklarını yakara": false,
+      "Virajlı": true,
+      "Eğimli": false,
+      "Kasisli": false,
+      "Kaygan": true,
     },
+      resim: "assets/images/test1_6.jpg"
+  ),
+  SoruModeli(
+    "32) Kara yolunun sağ ve soluna konan şekildeki trafik işaretleri sürücülere aşağıdakilerden "
+        "hangisine yaklaşıldığını gösterir?",
+    {
+      "Kavşağa": false,
+      "Köprüye": true,
+      "Tali yola": false,
+      "Demir yoluna": false,
+    },
+      resim: "assets/images/test1_7.jpg"
+  ),
+  SoruModeli(
+    "33) Görüş yetersizliği olan tepe üstü ve dönemeçlerde, aşağıdakilerden hangisinin yapılması yasaktır?",
+    {
+      "Hızın azaltılması": false,
+      "Öndeki aracın geçilmesi": true,
+      "Takip mesafesi kuralına uyulması": false,
+      "Bulunduğu şeridin sağına yaklaşılması": false,
+    },
+  ),
+  SoruModeli(
+      "34) Şekildeki kara yoluna ne ad verilir?",
+      {
+        "Tali yol": false,
+        "Geçiş yolu": false,
+        "Bağlantı yolu": false,
+        "Bölünmüş yol": true,
+      },
+      resim: "assets/images/test1_8.jpg"
   ),
 ];
