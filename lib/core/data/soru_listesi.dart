@@ -321,7 +321,7 @@ List<SoruModeli> sorular = [
   SoruModeli(
     "31) Şekildeki trafik işareti hangi yol bölümünde bulunur?",
     {
-      "Virajlı": true,
+      "Virajlı": false,
       "Eğimli": false,
       "Kasisli": false,
       "Kaygan": true,

@@ -1,9 +1,7 @@
 import 'package:ehliyet_hazirlik/ui/screens/sonuc_ekrani.dart';
 import 'package:flutter/material.dart';
-
 import '../../../core/data/soru_listesi.dart';
 import '../../constant/renkler.dart';
-import '../../widgets/my_container.dart';
 
 class SoruCevap extends StatefulWidget {
   const SoruCevap({Key? key}) : super(key: key);
@@ -62,8 +60,12 @@ class _SoruCevapState extends State<SoruCevap>
                   ),
                 ),
                 const SizedBox(height: 35),
-                sorular[index].resim == null ? const Text("") :Image.asset(sorular[index].resim!),
-                sorular[index].resim == null ? const Text("") :const SizedBox(height: 35),
+                sorular[index].resim == null
+                    ? const Text("")
+                    : Image.asset(sorular[index].resim!),
+                sorular[index].resim == null
+                    ? const Text("")
+                    : const SizedBox(height: 35),
                 for (int i = 0; i < sorular[index].cevap!.length; i++)
                   Stack(
                     children: [
@@ -142,8 +144,19 @@ class _SoruCevapState extends State<SoruCevap>
                   ),
                 const SizedBox(height: 30),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
+                    OutlinedButton(
+                      onPressed: (){
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) =>
+                                  SonucEkrani(score),
+                            ));
+                      },
+                      child: const Text("Sınavı Tamamla"),
+                    ),
                     OutlinedButton(
                       onPressed: isPressed!
                           ? index + 1 == sorular.length
