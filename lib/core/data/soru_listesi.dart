@@ -289,4 +289,42 @@ List<SoruModeli> sorular = [
       "Can ve mal güvenliğini tehlikeye sokmamaya": true,
     },
   ),
+  SoruModeli(
+    "28) Aşağıdakilerden hangisinin temel işlevi, çarpma anında oluşabilecek etkileri vücudun"
+        " daha güçlü bölgelerine yönlendirerek ölüm ve yaralanma riskini azaltmaktadır?",
+    {
+      "Kriko": false,
+      "Reflektör": false,
+      "Emniyet kemeri": true,
+      "Çekme halatı": false,
+    },
+  ),
+  SoruModeli(
+    "29) Taşıt yolu üzerine çizilen şekildeki çizgilerin anlamı nedir?",
+    {
+      "Yavaşlama çizgisi": false,
+      "Taralı alana girilmez": true,
+      "Bölünmüş yol başlangıcı": false,
+      "Taralı alan içine park edilebilir": false,
+    },
+    resim: "assets/images/test1_5.jpg"
+  ),
+  SoruModeli(
+    "30) Geceleyin, görüşün yeterli olmadığı kavşağa yaklaşan sürücü gelişini nasıl haber vermelidir?",
+    {
+      "Birkaç defa selektör yaparak": true,
+      "Acil uyarı ışıklarını yakarak": false,
+      "Bir kaç defa korna çalarak": false,
+      "Dönüş ışıklarını yakara": false,
+    },
+  ),
+  SoruModeli(
+    "31) Geceleyin, görüşün yeterli olmadığı kavşağa yaklaşan sürücü gelişini nasıl haber vermelidir?",
+    {
+      "Birkaç defa selektör yaparak": true,
+      "Acil uyarı ışıklarını yakarak": false,
+      "Bir kaç defa korna çalarak": false,
+      "Dönüş ışıklarını yakara": false,
+    },
+  ),
 ];
