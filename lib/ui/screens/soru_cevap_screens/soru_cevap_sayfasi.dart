@@ -83,7 +83,7 @@ class _SoruCevapState extends State<SoruCevap>
                                         .entries
                                         .toList()[i]
                                         .value) {
-                                      score += 10;
+                                      score += 2;
                                       debugPrint("score : $score");
                                       setState(() {});
                                     }
