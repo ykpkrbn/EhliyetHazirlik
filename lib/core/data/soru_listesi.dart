@@ -193,7 +193,7 @@ List<SoruModeli> sorular = [
       "Yol kenarındaki banketler": false,
       "Hız kontrolü yapan uyarı cihazları": false,
     },
-    resim: "assets/images/test1.jpg",
+    resim: "assets/images/deneme_testi1/test1.jpg",
   ),
   SoruModeli(
     "19) Uyuşturucu veya uyarıcı madde aldığı tespit edilen sürücü hakkında aşağıdaki işlemlerden hangisi yapılır?",
@@ -248,7 +248,7 @@ List<SoruModeli> sorular = [
       "Yavaşlatma işareti": false,
       "Hızlandırma işareti": false,
     },
-    resim: "assets/images/test1_1.jpg",
+    resim: "assets/images/deneme_testi1/test1_1.jpg",
   ),
   SoruModeli(
     "24) Şekildeki gibi kontrolsüz kavşakta karşılaşan araçların geçiş hakkı sıralaması nasıl olmalıdır?",
@@ -258,7 +258,7 @@ List<SoruModeli> sorular = [
       "3-1-2": false,
       "3-2-1": true,
     },
-    resim: "assets/images/test1_2.jpg",
+    resim: "assets/images/deneme_testi1/test1_2.jpg",
   ),
   SoruModeli(
     "25) Şekildeki kazada hangi numaralı araç sürücüsü asli kusurlu sayılır?",
@@ -268,7 +268,7 @@ List<SoruModeli> sorular = [
       "3": false,
       "4": false,
     },
-    resim: "assets/images/test1_3.jpg",
+    resim: "assets/images/deneme_testi1/test1_3.jpg",
   ),
   SoruModeli(
     "26) Şekildeki kontrolsüz kavşakta ilk geçiş hakkını hangi araç kullanmalıdır?",
@@ -278,7 +278,7 @@ List<SoruModeli> sorular = [
       "Kamyonet": true,
       "Motosiklet": false,
     },
-    resim: "assets/images/test1_4.jpg",
+    resim: "assets/images/deneme_testi1/test1_4.jpg",
   ),
   SoruModeli(
     "27) Geçiş üstünlüğüne sahip araç sürücüsü, bu hakkı kullanırken aşağıdakilerden hangisine dikkat etmek zorundadır?",
@@ -307,7 +307,7 @@ List<SoruModeli> sorular = [
       "Bölünmüş yol başlangıcı": false,
       "Taralı alan içine park edilebilir": false,
     },
-    resim: "assets/images/test1_5.jpg"
+    resim: "assets/images/deneme_testi1/test1_5.jpg"
   ),
   SoruModeli(
     "30) Geceleyin, görüşün yeterli olmadığı kavşağa yaklaşan sürücü gelişini nasıl haber vermelidir?",
@@ -326,7 +326,7 @@ List<SoruModeli> sorular = [
       "Kasisli": false,
       "Kaygan": true,
     },
-      resim: "assets/images/test1_6.jpg"
+      resim: "assets/images/deneme_testi1/test1_6.jpg"
   ),
   SoruModeli(
     "32) Kara yolunun sağ ve soluna konan şekildeki trafik işaretleri sürücülere aşağıdakilerden "
@@ -337,7 +337,7 @@ List<SoruModeli> sorular = [
       "Tali yola": false,
       "Demir yoluna": false,
     },
-      resim: "assets/images/test1_7.jpg"
+      resim: "assets/images/deneme_testi1/test1_7.jpg"
   ),
   SoruModeli(
     "33) Görüş yetersizliği olan tepe üstü ve dönemeçlerde, aşağıdakilerden hangisinin yapılması yasaktır?",
@@ -356,6 +356,160 @@ List<SoruModeli> sorular = [
         "Bağlantı yolu": false,
         "Bölünmüş yol": true,
       },
-      resim: "assets/images/test1_8.jpg"
+      resim: "assets/images/deneme_testi1/test1_8.jpg"
+  ),
+  SoruModeli(
+      "35) Konvoy halinde seyreden araçların arasındaki mesafe en az ne kadar olmalıdır?",
+      {
+        "Takip mesafesi kadar": true,
+        "Araç uzunluğunun üç katı kadar": false,
+        "Trafik ve yol durumuna göre istenildiği kadar": false,
+        "Aracın cinsi ve teknik özelliklerinin gerektirdiği kadar": false,
+      },
+  ),
+  SoruModeli(
+      "36) Aracın gösterge panelinde şekildeki uyarı lambasının yanıyor olması neyi bildirir?",
+      {
+        "Elektrik devresinde aşırı şarj veya düşük şarj olduğunu": false,
+        "Arka cam rezistansının çalışmakta olduğunu": true,
+        "Soğutma sıvısı sıcaklığının çok yükseldiği": false,
+        "Motor kaputunun tam kapanmadığı": false,
+      },
+      resim: "assets/images/deneme_testi1/test1_9.jpg"
+  ),
+  SoruModeli(
+      "37) Aşağıdakilerden hangisi diferansiyelin görevlerinden biri değildir?",
+      {
+        "Yakıt tasarrufu sağlamak": true,
+        "Tekerleklere güç ve tork dağılımını sağlamak": false,
+        "Şafttan gelen torku artırarak akslara iletmek": false,
+        "Virajda dış tekerleğin iç tekerlekten fazla dönmesini sağlamak": false,
+      },
+  ),
+  SoruModeli(
+      "38) Şekilde soru işareti(?) ile gösterilen ve vites kutusundan gelen hareketin diferansiyele iletilmesini "
+          "sağlayan şey nedir?",
+      {
+        "Şaft": true,
+        "Aks": false,
+        "Volan": false,
+        "Kavrama": false,
+      },
+      resim: "assets/images/deneme_testi1/test1_10.jpg"
+  ),
+  SoruModeli(
+      "39) Aracın elektrik sisteminde sigortalardan biri yanmış ise yerine takılacak sigortanın amper değeri "
+          "ne olmalıdır?",
+      {
+        "Aynı": true,
+        "Daha büyük": false,
+        "Daha küçük": false,
+        "Önemli değildir": false,
+      },
+  ),
+  SoruModeli(
+    "40) Motorlar soğutma sistemlerine göre nasıl sınıflandırılır?",
+    {
+      "Su ve yağ soğutmalı": false,
+      "Su ve hava soğutmalı": true,
+      "Yağ ve motorin soğutmalı": false,
+      "Hava ve benzin soğutmalı": false,
+    },
+  ),
+  SoruModeli(
+    "41) Araçta, aşağıdakilerden hangisinin kullanılması yağışlı havalarda kaza riskini arttırır?",
+    {
+      "Tam şarjlı akü": false,
+      "Uzun yakıt boruları": false,
+      "Antifrizli soğutma suyu": false,
+      "Eski ve aşınmış lastikler": true,
+    },
+  ),
+  SoruModeli(
+    "42) Sıkıştırılmış yakıt-hava karışımının buji ile ateşlenmesi sonucu çalışan motor hangisidir?",
+    {
+      "Dizel motor": false,
+      "Benzinli motor": true,
+      "Marş motoru": false,
+      "Buhar makinesi": false,
+    },
+  ),
+  SoruModeli(
+    "43) Aşağıdakilerden hangisinin periyodik bakımı yapılmadığında yakıt sistemine yeterli "
+        "miktarda yakıt ulaşmaz?",
+    {
+      "Yağ": false,
+      "Polen": false,
+      "Yakıt": true,
+      "Ekran": false,
+    },
+  ),
+  SoruModeli(
+    "44) Fren pedalına basıldığında fren lambaları yanmıyorsa sebebi aşağıdakilerden hangisidir?",
+    {
+      "Flaşör arızası": false,
+      "Distribütör arızası": false,
+      "Fren müşiri arızası": true,
+      "Geri vites müşiri arızası": false,
+    },
+  ),
+  SoruModeli(
+    "45) Öndeki araç yol kenarına park etmeye çalışırken arkadan gelen diğer aracın onu beklemesi durumu, "
+        "trafikte aşağıdaki değerlerden hangisine  sahip olunduğunu gösterir?",
+    {
+      "Öfke": false,
+      "Sabır": true,
+      "İnatlaşma": false,
+      "Aşırı tepki": false,
+    },
+  ),
+  SoruModeli(
+    "46) Trafikte yaşanan öfke duygusu aşağıdakilerden hangisine yol açabilmektedir?",
+    {
+      "Kural ihlallerinin azalmasına": false,
+      "Direksiyon hakimiyetinin artmasına": false,
+      "Kazaya karışma olasılığının azalmasına": false,
+      "Sürücülük yeteneğinin olumsuz yönde etkilenmesine": true,
+    },
+  ),
+  SoruModeli(
+    "47) Aşağıdakilerden hangisi hoşgörü sahibi olmayan sürücülerin özelliklerindendir?",
+    {
+      "Öfkeli olmak": true,
+      "Sabırlı olmak": false,
+      "Başarılı iletişim kurmak": false,
+      "Bencillikten uzak durmak": false,
+    },
+  ),
+  SoruModeli(
+    "48) Öndeki araç yol kenarına park etmeye çalışırken arkadan gelen diğer aracın onu beklemesi durumu, trafikte "
+        "hangi temel değere sahip olunduğunu gösterir?",
+    {
+      "Öfke": false,
+      "Sabır": true,
+      "İnatlaşma": false,
+      "Aşırı tepki": false,
+    },
+  ),
+  SoruModeli(
+    "49) Aracını park ettikten sonra durduğu yerin diğer yol kullanıcıları açısında görme "
+        "görülme ya da manevra engeli oluşturup oluşturmadığını kontrol eden bir "
+        "sürücünün bu davranışı trafikteki hangi değere uygundur?",
+    {
+      "Empati": true,
+      "Tahammül": false,
+      "Beden dili": false,
+      "Konuşma üslubu": false,
+    },
+  ),
+  SoruModeli(
+    "50) Aşağıdakilerden hangisinin trafikte öfke duygusuna kapılan sürücülerde görülme "
+        "olasılığı diğer sürücülere göre daha fazladır?",
+    {
+      "Dikkatin dağılması": true,
+      "Kural ihlallerinin azalması": false,
+      "Direksiyon hakimiyetinin artması": false,
+      "Kazaya karışma olasılığının azalması": false,
+    },
   ),
 ];
