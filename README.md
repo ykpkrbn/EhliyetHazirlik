@@ -1,3 +1,3 @@
-# ehliyet_hazirlik
+# ehliyet hazirlik
 
 Ehliyet sınavına hazırlık projesi
