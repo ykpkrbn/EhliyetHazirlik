@@ -39,6 +39,7 @@ List<SoruModeli> sorular2 = [
       "5 cm": true,
       "6 cm": false,
     },
+      resim: "assets/images/deneme_testi2/test2_1.jpg",
   ),
   SoruModeli(
     "5) Aşağıdakilerden hangisi, bebeklere yapılan suni solunum uygulanmasında dikkat edilecek kurallardandır?",
@@ -155,5 +156,77 @@ List<SoruModeli> sorular2 = [
       "Geçiş mesafesi": false,
       "İntikal mesafesi": false,
     },
+  ),
+  SoruModeli(
+    "17) Kavşaklara yaklaşırken yol üzerine çizilmiş şekildeki oklar sürücülere neyi bildirir?",
+    {
+      "Hızın arttırılması gerektiğini": false,
+      "Sağa ve sola dönülemeyeceğini": false,
+      "Seyir yönüne uygun şeridin kullanılması gerektiğini": true,
+      "Durma, duraklama ve park etmenin yasaklanmış olduğunu": false,
+    },
+    resim: "assets/images/deneme_testi2/test2_2.jpg",
+  ),
+  SoruModeli(
+    "18) Şekildeki aracın sürücüsü, kamu hizmeti yapan yolcu taşıtı durağının en az kaç metre "
+        "mesafe dışına aracını park edebilir?",
+    {
+      "5": false,
+      "10": false,
+      "15": true,
+      "20": false,
+    },
+    resim: "assets/images/deneme_testi2/test2_3.jpg",
+  ),
+  SoruModeli(
+    "B sınıfı sürücü belgesine sahip olan Mehmet, A2 sınıfı sürücü belgesi almak için başvuru yapıyor.\n\n"
+        "19) Bu durumda Mehmet, aşağıdaki araçlardan hangisini kullanmak istemektedir?",
+    {
+      "Traktör": false,
+      "Motosiklet": true,
+      "Minibüs": false,
+      "Tır": false,
+    },
+  ),
+  SoruModeli(
+    "Trafik kazalarında araçlara ait kusurlardan bazıları şunlardır...\n"
+        "*Kusurlu far\n*Kusurlu rot\n*Kusurlu fren\n*Kusurlu direksiyon.\n\n"
+        "20) Bu kusurlara bağlı trafik kazalarını önlemek için aşağıdakilerden "
+        "hangisinin yapılması uygun olur?",
+    {
+      "Araç yakıtının zamanında alınması": false,
+      "Araç bakımının zamanında yapılması": true,
+      "Motor yağının zamanında değiştirilmesi": false,
+      "Seyir sırasında saatte bir mola verilmesi": false,
+    },
+  ),
+  SoruModeli(
+    "21) Kara yollarında uzun süreli beklemeyi gerektiren duraklamalarda aşağıdakilerden "
+        "hangisinin yapılması gerekir?",
+    {
+      "Aracın kapılarının açık tutulması": false,
+      "Trafik görevlisine haber verilmesi": false,
+      "Motor çalışır halde farların yakılması": false,
+      "Motorun durdurulup el freninin çekilmesi": true,
+    },
+  ),
+  SoruModeli(
+    "22) Aşağıdakilerden hangisi trafik kazalarına neden olan faktörlerden yol unsuru içinde yer alır?",
+    {
+      "Havanın sisli olması": false,
+      "Yol zemininin gevşek olması": true,
+      "Yüksek hızda araç kullanılması": false,
+      "Araç fren sisteminin arızalanması": false,
+    },
+  ),
+  SoruModeli(
+    "23) Aşağıdaki tehlike uyarı işareti ne anlama gelmektedir?",
+    {
+      "Tehlikeli viraj yön levhası": true,
+      "Kontrolsüz demiryolu geçidi": false,
+      "Anayol yol - tali yol kavşağı": false,
+      "Kontrolsüz kavşak": false,
+    },
+    resim: "assets/images/deneme_testi2/test2_4.jpg",
   ),
 ];

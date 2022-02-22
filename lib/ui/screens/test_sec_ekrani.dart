@@ -26,7 +26,10 @@ class _TestSecEkraniState extends State<TestSecEkrani> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Test Ekranım"),
+        title: Text("Test Ekranım", style: TextStyle(
+          color: beyazRenk,
+          fontSize: 30,
+        ),),
         centerTitle: true,
         elevation: 0,
         backgroundColor: anaRenk,
@@ -42,12 +45,15 @@ class _TestSecEkraniState extends State<TestSecEkrani> {
             itemCount: secilenYon.length,
             itemBuilder: (context, index){
               return InkWell(
-                onTap: (){setState(() {
-                  Navigator.pushNamed(context, secilenYon[index]);
-                });},
+                onTap: (){Navigator.pushNamed(context, secilenYon[index]);},
                 child: MyContainer(
                   color: ikinciRenk,
-                  child: Text("Test ${index+1}", textAlign: TextAlign.center,),
+                  child: Text("Test ${index+1}", textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: beyazRenk,
+                    fontSize: 20,
+                  ),
+                  ),
                 ),
               );
             } ),

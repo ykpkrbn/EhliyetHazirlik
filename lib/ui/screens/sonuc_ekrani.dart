@@ -15,21 +15,24 @@ class SonucEkrani extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: anaRenk,
-      body: ListView(
-        physics: const BouncingScrollPhysics(),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Text(
-            score == 0 ? "Geliştirmelisin" : "Tebrikler",
+            score < 70
+                ? "Maalesef Sınavda kaldınız. Tekrar hazırlanmakta fayda var"
+                : "Tebrikler Sınavı geçtiniz",
             textAlign: TextAlign.center,
             style: TextStyle(
-                fontSize: 80, color: beyazRenk, fontWeight: FontWeight.bold),
+                fontSize: Theme.of(context).textTheme.headline3?.fontSize,
+                color: beyazRenk, fontWeight: FontWeight.bold),
           ),
-          const SizedBox(height: 50),
           Text(
             "Skorunuz",
             textAlign: TextAlign.center,
             style: TextStyle(
-                fontSize: 28, color: beyazRenk, fontWeight: FontWeight.bold),
+                fontSize: Theme.of(context).textTheme.headline3?.fontSize,
+                color: beyazRenk, fontWeight: FontWeight.bold),
           ),
           Text(
             score.toString(),
@@ -80,12 +83,14 @@ class SonucEkrani extends StatelessWidget {
                 shape: const StadiumBorder(),
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Text(
-                    "Ana Sayfaya \nGit",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: beyazRenk,
+                  child: FittedBox(
+                    child: Text(
+                      "Ana Sayfaya \nGit",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: beyazRenk,
+                      ),
                     ),
                   ),
                 ),
