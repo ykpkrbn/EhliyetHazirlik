@@ -10,8 +10,8 @@ class TestSecEkrani extends StatefulWidget {
 }
 
 class _TestSecEkraniState extends State<TestSecEkrani> {
-
   late List<String> secilenYon;
+
   @override
   void initState() {
     super.initState();
@@ -26,10 +26,13 @@ class _TestSecEkraniState extends State<TestSecEkrani> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Test Ekranım", style: TextStyle(
-          color: beyazRenk,
-          fontSize: 30,
-        ),),
+        title: Text(
+          "Test Ekranım",
+          style: TextStyle(
+            color: beyazRenk,
+            fontSize: 30,
+          ),
+        ),
         centerTitle: true,
         elevation: 0,
         backgroundColor: anaRenk,
@@ -43,22 +46,25 @@ class _TestSecEkraniState extends State<TestSecEkrani> {
               crossAxisSpacing: 15,
             ),
             itemCount: secilenYon.length,
-            itemBuilder: (context, index){
+            itemBuilder: (context, index) {
               return InkWell(
-                onTap: (){Navigator.pushNamed(context, secilenYon[index]);},
+                onTap: () {
+                  Navigator.pushNamed(context, secilenYon[index]);
+                },
                 child: MyContainer(
                   color: ikinciRenk,
-                  child: Text("Test ${index+1}", textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: beyazRenk,
-                    fontSize: 20,
-                  ),
+                  child: Text(
+                    "Test ${index + 1}",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: beyazRenk,
+                      fontSize: 20,
+                    ),
                   ),
                 ),
               );
-            } ),
+            }),
       ),
     );
   }
-
 }

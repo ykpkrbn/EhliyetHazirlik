@@ -1,7 +1,5 @@
-import 'package:ehliyet_hazirlik/ui/screens/soru_cevap_screens/soru_cevap_sayfasi.dart';
 import 'package:ehliyet_hazirlik/ui/screens/test_sec_ekrani.dart';
 import 'package:flutter/material.dart';
-
 import '../constant/renkler.dart';
 
 class HomePage extends StatefulWidget {
@@ -55,8 +53,8 @@ class _HomePageState extends State<HomePage> {
               ),
               MaterialButton(
                 onPressed: () {
-                  Navigator.pushNamedAndRemoveUntil(context,
-                      "/SkorlarEkrani", (context) => false);
+                  Navigator.pushNamed(context,
+                      "/SkorlarEkrani");
                 },
                 color: ikinciRenk,
                 shape: const StadiumBorder(),

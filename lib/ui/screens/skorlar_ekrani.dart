@@ -49,7 +49,7 @@ class _SkorlarEkraniState extends State<SkorlarEkrani> {
         future: skorlariGetirGoster(),
         builder: (BuildContext context, AsyncSnapshot snapshot) {
 
-          if(snapshot.hasData != null){
+          if(snapshot.hasData){
             if(snapshot.connectionState == ConnectionState.waiting){
               return const Center(child: CircularProgressIndicator());
             }else if(snapshot.connectionState == ConnectionState.done){
