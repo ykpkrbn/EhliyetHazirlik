@@ -60,8 +60,12 @@ class _SoruCevap2State extends State<SoruCevap2>
                   ),
                 ),
                 const SizedBox(height: 35),
-                sorular2[index].resim == null ? const Text("") :Image.asset(sorular2[index].resim!),
-                sorular2[index].resim == null ? const Text("") :const SizedBox(height: 35),
+                sorular2[index].resim == null
+                    ? const Text("")
+                    : Image.asset(sorular2[index].resim!),
+                sorular2[index].resim == null
+                    ? const Text("")
+                    : const SizedBox(height: 35),
                 for (int i = 0; i < sorular2[index].cevap!.length; i++)
                   Stack(
                     children: [
@@ -73,39 +77,44 @@ class _SoruCevap2State extends State<SoruCevap2>
                             onPressed: isPressed!
                                 ? () {}
                                 : () {
-                              setState(() {
-                                isPressed = true;
-                              });
-                              if (sorular2[index]
-                                  .cevap!
-                                  .entries
-                                  .toList()[i]
-                                  .value) {
-                                score += 10;
-                                debugPrint("score : $score");
-                                setState(() {});
-                              }
-                            },
+                                    setState(() {
+                                      isPressed = true;
+                                    });
+                                    if (sorular2[index]
+                                        .cevap!
+                                        .entries
+                                        .toList()[i]
+                                        .value) {
+                                      score += 2;
+                                      debugPrint("score : $score");
+                                      setState(() {});
+                                    }
+                                  },
                             padding: const EdgeInsets.symmetric(vertical: 18),
                             color: isPressed!
                                 ? sorular2[index]
-                                .cevap!
-                                .entries
-                                .toList()[i]
-                                .value
-                                ? yesilRenk
-                                : kirmiziRenk
+                                        .cevap!
+                                        .entries
+                                        .toList()[i]
+                                        .value
+                                    ? yesilRenk
+                                    : kirmiziRenk
                                 : ikinciRenk,
                             shape: const StadiumBorder(),
-                            child: Text(sorular2[index].cevap!.keys.toList()[i],
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  color: beyazRenk,
-                                  fontSize: Theme.of(context)
-                                      .textTheme
-                                      .headline6
-                                      ?.fontSize,
-                                )),
+                            child: FittedBox(
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 3.0),
+                                child: Text(sorular2[index].cevap!.keys.toList()[i],
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                      color: beyazRenk,
+                                      fontSize: Theme.of(context)
+                                          .textTheme
+                                          .headline6
+                                          ?.fontSize,
+                                    )),
+                              ),
+                            ),
                           ),
                         ),
                       ),
@@ -140,25 +149,35 @@ class _SoruCevap2State extends State<SoruCevap2>
                   ),
                 const SizedBox(height: 30),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     OutlinedButton(
-                      onPressed: isPressed!
-                          ? index + 1 == sorular2.length
-                          ? () {
+                      onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) =>
-                                  SonucEkrani(score),
+                              builder: (context) => SonucEkrani(score),
                             ));
-                      }
-                          : () {
-                        _controller?.nextPage(
-                            duration:
-                            const Duration(milliseconds: 250),
-                            curve: Curves.linear);
-                      }
+                      },
+                      child: const Text("Sınavı Tamamla"),
+                    ),
+                    OutlinedButton(
+                      onPressed: isPressed!
+                          ? index + 1 == sorular2.length
+                              ? () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) =>
+                                            SonucEkrani(score),
+                                      ));
+                                }
+                              : () {
+                                  _controller?.nextPage(
+                                      duration:
+                                          const Duration(milliseconds: 250),
+                                      curve: Curves.linear);
+                                }
                           : null,
                       child: Text(index + 1 == sorular2.length
                           ? "Sınavı Tamamla"

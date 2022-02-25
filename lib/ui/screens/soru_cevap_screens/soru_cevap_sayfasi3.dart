@@ -1,16 +1,17 @@
+import 'package:ehliyet_hazirlik/core/data/soru_listesi3.dart';
 import 'package:ehliyet_hazirlik/ui/screens/sonuc_ekrani.dart';
 import 'package:flutter/material.dart';
 import '../../../core/data/soru_listesi.dart';
 import '../../constant/renkler.dart';
 
-class SoruCevap extends StatefulWidget {
-  const SoruCevap({Key? key}) : super(key: key);
+class SoruCevap3 extends StatefulWidget {
+  const SoruCevap3({Key? key}) : super(key: key);
 
   @override
-  _SoruCevapState createState() => _SoruCevapState();
+  _SoruCevap3State createState() => _SoruCevap3State();
 }
 
-class _SoruCevapState extends State<SoruCevap>
+class _SoruCevap3State extends State<SoruCevap3>
     with SingleTickerProviderStateMixin {
   final PageController? _controller = PageController(initialPage: 0);
   bool? isPressed = false;
@@ -30,7 +31,7 @@ class _SoruCevapState extends State<SoruCevap>
               isPressed = false;
             });
           },
-          itemCount: sorular.length,
+          itemCount: sorular3.length,
           itemBuilder: (context, index) {
             return ListView(
               physics: const BouncingScrollPhysics(),
@@ -38,7 +39,7 @@ class _SoruCevapState extends State<SoruCevap>
                 SizedBox(
                   width: double.infinity,
                   child: Text(
-                    "Soru ${index + 1} / ${sorular.length}",
+                    "Soru ${index + 1} / ${sorular3.length}",
                     style: TextStyle(
                       color: beyazRenk,
                       fontWeight: FontWeight.w300,
@@ -53,20 +54,20 @@ class _SoruCevapState extends State<SoruCevap>
                 ),
                 const SizedBox(height: 40),
                 Text(
-                  sorular[index].soru!,
+                  sorular3[index].soru!,
                   style: TextStyle(
                     color: beyazRenk,
                     fontSize: Theme.of(context).textTheme.headline6?.fontSize,
                   ),
                 ),
                 const SizedBox(height: 35),
-                sorular[index].resim == null
+                sorular3[index].resim == null
                     ? const Text("")
-                    : Image.asset(sorular[index].resim!),
-                sorular[index].resim == null
+                    : Image.asset(sorular3[index].resim!),
+                sorular3[index].resim == null
                     ? const Text("")
                     : const SizedBox(height: 35),
-                for (int i = 0; i < sorular[index].cevap!.length; i++)
+                for (int i = 0; i < sorular3[index].cevap!.length; i++)
                   Stack(
                     children: [
                       Positioned(
@@ -77,34 +78,34 @@ class _SoruCevapState extends State<SoruCevap>
                             onPressed: isPressed!
                                 ? () {}
                                 : () {
-                                    setState(() {
-                                      isPressed = true;
-                                    });
-                                    if (sorular[index]
-                                        .cevap!
-                                        .entries
-                                        .toList()[i]
-                                        .value) {
-                                      score += 2;
-                                      debugPrint("score : $score");
-                                      setState(() {});
-                                    }
-                                  },
+                              setState(() {
+                                isPressed = true;
+                              });
+                              if (sorular3[index]
+                                  .cevap!
+                                  .entries
+                                  .toList()[i]
+                                  .value) {
+                                score += 2;
+                                debugPrint("score : $score");
+                                setState(() {});
+                              }
+                            },
                             padding: const EdgeInsets.symmetric(vertical: 18),
                             color: isPressed!
-                                ? sorular[index]
-                                        .cevap!
-                                        .entries
-                                        .toList()[i]
-                                        .value
-                                    ? yesilRenk
-                                    : kirmiziRenk
+                                ? sorular3[index]
+                                .cevap!
+                                .entries
+                                .toList()[i]
+                                .value
+                                ? yesilRenk
+                                : kirmiziRenk
                                 : ikinciRenk,
                             shape: const StadiumBorder(),
                             child: FittedBox(
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 3.0),
-                                child: Text(sorular[index].cevap!.keys.toList()[i],
+                                child: Text(sorular3[index].cevap!.keys.toList()[i],
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       color: beyazRenk,
@@ -122,7 +123,7 @@ class _SoruCevapState extends State<SoruCevap>
                       //     right: 5,
                       //     child: MyContainer(
                       //       child: isPressed!
-                      //           ? sorular[index]
+                      //           ? sorular3[index]
                       //                   .cevap!
                       //                   .entries
                       //                   .toList()[i]
@@ -132,11 +133,11 @@ class _SoruCevapState extends State<SoruCevap>
                       //           : const Text(""),
                       //
                       //       /// Burayı reklamla yap
-                      //       // sorular[index].cevap!.entries.toList()[i].value ?
+                      //       // sorular3[index].cevap!.entries.toList()[i].value ?
                       //       // const Icon(Icons.done): const Icon(Icons.architecture_sharp),
                       //
                       //       color: isPressed!
-                      //           ? sorular[index]
+                      //           ? sorular3[index]
                       //                   .cevap!
                       //                   .entries
                       //                   .toList()[i]
@@ -164,23 +165,23 @@ class _SoruCevapState extends State<SoruCevap>
                     ),
                     OutlinedButton(
                       onPressed: isPressed!
-                          ? index + 1 == sorular.length
-                              ? () {
-                                  Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) =>
-                                            SonucEkrani(score),
-                                      ));
-                                }
-                              : () {
-                                  _controller?.nextPage(
-                                      duration:
-                                          const Duration(milliseconds: 250),
-                                      curve: Curves.linear);
-                                }
+                          ? index + 1 == sorular3.length
+                          ? () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) =>
+                                  SonucEkrani(score),
+                            ));
+                      }
+                          : () {
+                        _controller?.nextPage(
+                            duration:
+                            const Duration(milliseconds: 250),
+                            curve: Curves.linear);
+                      }
                           : null,
-                      child: Text(index + 1 == sorular.length
+                      child: Text(index + 1 == sorular3.length
                           ? "Sınavı Tamamla"
                           : "Sonraki Soru"),
                     ),
