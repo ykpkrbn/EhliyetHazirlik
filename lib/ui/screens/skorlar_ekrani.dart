@@ -11,7 +11,6 @@ class SkorlarEkrani extends StatefulWidget {
 }
 
 class _SkorlarEkraniState extends State<SkorlarEkrani> {
-
   skorlariGetirGoster() async {
     final skorlar = await DBProvider.dataBase.skorlariGoster();
     debugPrint("Skorlar : $skorlar");
@@ -48,11 +47,10 @@ class _SkorlarEkraniState extends State<SkorlarEkrani> {
       body: FutureBuilder(
         future: skorlariGetirGoster(),
         builder: (BuildContext context, AsyncSnapshot snapshot) {
-
-          if(snapshot.hasData){
-            if(snapshot.connectionState == ConnectionState.waiting){
+          if (snapshot.hasData) {
+            if (snapshot.connectionState == ConnectionState.waiting) {
               return const Center(child: CircularProgressIndicator());
-            }else if(snapshot.connectionState == ConnectionState.done){
+            } else if (snapshot.connectionState == ConnectionState.done) {
               return Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: ListView.builder(
@@ -61,30 +59,26 @@ class _SkorlarEkraniState extends State<SkorlarEkrani> {
                   itemCount: snapshot.data.length,
                   itemBuilder: (context, index) {
                     int skorum = snapshot.data[index]["score"];
-                    String yil =
-                    DateTime.parse(snapshot.data[index]["tarih"])
+                    String yil = DateTime.parse(snapshot.data[index]["tarih"])
                         .year
                         .toString();
-                    String ay =
-                    DateTime.parse(snapshot.data[index]["tarih"])
+                    String ay = DateTime.parse(snapshot.data[index]["tarih"])
                         .month
                         .toString();
-                    String gun =
-                    DateTime.parse(snapshot.data[index]["tarih"])
+                    String gun = DateTime.parse(snapshot.data[index]["tarih"])
                         .day
                         .toString();
-                    String saat =
-                    DateTime.parse(snapshot.data[index]["tarih"])
+                    String saat = DateTime.parse(snapshot.data[index]["tarih"])
                         .hour
                         .toString();
                     String dakika =
-                    DateTime.parse(snapshot.data[index]["tarih"])
-                        .minute
-                        .toString();
+                        DateTime.parse(snapshot.data[index]["tarih"])
+                            .minute
+                            .toString();
                     String saniye =
-                    DateTime.parse(snapshot.data[index]["tarih"])
-                        .second
-                        .toString();
+                        DateTime.parse(snapshot.data[index]["tarih"])
+                            .second
+                            .toString();
                     return Card(
                       color: ikinciRenk,
                       child: InkWell(
@@ -100,7 +94,7 @@ class _SkorlarEkraniState extends State<SkorlarEkrani> {
                   },
                 ),
               );
-            }else {
+            } else {
               return Center(
                 child: Text(
                   "Veriler gelirken bir hata oluştu.",
@@ -111,7 +105,7 @@ class _SkorlarEkraniState extends State<SkorlarEkrani> {
                 ),
               );
             }
-          }else{
+          } else {
             return Center(
               child: Text(
                 "Skorunuz bulunmamaktadır.",
@@ -122,7 +116,6 @@ class _SkorlarEkraniState extends State<SkorlarEkrani> {
               ),
             );
           }
-
         },
       ),
     );

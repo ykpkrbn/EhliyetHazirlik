@@ -2,6 +2,7 @@ import 'package:ehliyet_hazirlik/ui/screens/homepage.dart';
 import 'package:ehliyet_hazirlik/ui/screens/skorlar_ekrani.dart';
 import 'package:ehliyet_hazirlik/ui/screens/soru_cevap_screens/soru_cevap_sayfasi.dart';
 import 'package:ehliyet_hazirlik/ui/screens/soru_cevap_screens/soru_cevap_sayfasi2.dart';
+import 'package:ehliyet_hazirlik/ui/screens/soru_cevap_screens/soru_cevap_sayfasi3.dart';
 import 'package:ehliyet_hazirlik/ui/screens/test_sec_ekrani.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         "/SkorlarEkrani" : (context) =>const SkorlarEkrani(),
         "/SoruCevap" : (context) =>const SoruCevap(),
         "/SoruCevap2" : (context) =>const SoruCevap2(),
+        "/SoruCevap3" : (context) =>const SoruCevap3(),
         "/TestSecEkrani" : (context) =>const TestSecEkrani(),
       },
     );

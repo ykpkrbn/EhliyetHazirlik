@@ -1,7 +1,6 @@
 import 'package:ehliyet_hazirlik/core/data/soru_listesi3.dart';
 import 'package:ehliyet_hazirlik/ui/screens/sonuc_ekrani.dart';
 import 'package:flutter/material.dart';
-import '../../../core/data/soru_listesi.dart';
 import '../../constant/renkler.dart';
 
 class SoruCevap3 extends StatefulWidget {

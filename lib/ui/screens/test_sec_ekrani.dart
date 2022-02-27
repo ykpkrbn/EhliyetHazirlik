@@ -18,6 +18,7 @@ class _TestSecEkraniState extends State<TestSecEkrani> {
     secilenYon = [
       "/SoruCevap",
       "/SoruCevap2",
+      "/SoruCevap3",
       "/SkorlarEkrani",
     ];
   }
@@ -39,11 +40,13 @@ class _TestSecEkraniState extends State<TestSecEkrani> {
       ),
       backgroundColor: anaRenk,
       body: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(12.0),
         child: GridView.builder(
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 3,
               crossAxisSpacing: 15,
+              mainAxisSpacing: 15,
+              childAspectRatio: 2,
             ),
             itemCount: secilenYon.length,
             itemBuilder: (context, index) {
