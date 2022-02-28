@@ -85,34 +85,38 @@ class _SoruCevapState extends State<SoruCevap>
                                         .entries
                                         .toList()[i]
                                         .value) {
+                                      yesilRenk;
                                       score += 2;
+                                      debugPrint("Tıklanılan index : ${i}");
                                       debugPrint("score : $score");
                                       setState(() {});
                                     }
                                   },
                             padding: const EdgeInsets.symmetric(vertical: 18),
-                            color: isPressed!
-                                ? sorular[index]
-                                        .cevap!
-                                        .entries
-                                        .toList()[i]
-                                        .value
+                            color: !isPressed!
+                                ? ikinciRenk
+                                : sorular[index]
+                                            .cevap!
+                                            .entries
+                                            .toList()[i]
+                                            .value
                                     ? yesilRenk
-                                    : kirmiziRenk
-                                : ikinciRenk,
+                                    : kirmiziRenk,
                             shape: const StadiumBorder(),
                             child: FittedBox(
                               child: Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 3.0),
-                                child: Text(sorular[index].cevap!.keys.toList()[i],
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: beyazRenk,
-                                      fontSize: Theme.of(context)
-                                          .textTheme
-                                          .headline6
-                                          ?.fontSize,
-                                    )),
+                                padding:
+                                    const EdgeInsets.symmetric(horizontal: 3.0),
+                                child:
+                                    Text(sorular[index].cevap!.keys.toList()[i],
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          color: beyazRenk,
+                                          fontSize: Theme.of(context)
+                                              .textTheme
+                                              .headline6
+                                              ?.fontSize,
+                                        )),
                               ),
                             ),
                           ),
@@ -152,12 +156,11 @@ class _SoruCevapState extends State<SoruCevap>
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     OutlinedButton(
-                      onPressed: (){
+                      onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) =>
-                                  SonucEkrani(score),
+                              builder: (context) => SonucEkrani(score),
                             ));
                       },
                       child: const Text("Sınavı Tamamla"),
