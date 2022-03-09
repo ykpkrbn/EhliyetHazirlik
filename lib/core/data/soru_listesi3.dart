@@ -146,6 +146,7 @@ List<SoruModeli> sorular3 = [
       "Otomobil": true,
       "Motosiklet": false,
     },
+    resim: "assets/images/deneme_testi3/test3_1.jpg",
   ),
   SoruModeli(
     "16) Aşağıdakilerden hangisi çevreye duyarlı bir davranış değildir?",
@@ -183,6 +184,7 @@ List<SoruModeli> sorular3 = [
       "Bölünmüş yol başlangıcı": true,
       "Trafiği hızlandırma işareti": false,
     },
+    resim: "assets/images/deneme_testi3/test3_2.jpg",
   ),
   SoruModeli(
     "20) Şekildeki trafik işareti aşağıdakilerden hangisini bildirir?",
@@ -192,6 +194,7 @@ List<SoruModeli> sorular3 = [
       "Tünele yaklaşıldığını": true,
       "Sola mecburi yönü": false,
     },
+    resim: "assets/images/deneme_testi3/test3_3.jpg",
   ),
   SoruModeli(
     "21) Aksine bir durum yoksa, ışıklı trafik işaret cihazında kırmızı ışık yanmakta ise "
@@ -211,6 +214,7 @@ List<SoruModeli> sorular3 = [
       "Kontrolsüz demiryolu geçidi": true,
       "Sola dönülmez": false,
     },
+    resim: "assets/images/deneme_testi3/test3_4.jpg",
   ),
   SoruModeli(
     "23) Yetkililerce, araçla ilgili belgelerin alınıp aracın belirli bir yere çekilerek "
@@ -230,6 +234,7 @@ List<SoruModeli> sorular3 = [
       "Kontrollü demiryolu geçidine": true,
       "Kontrolsüz demiryolu geçidine": false,
     },
+    resim: "assets/images/deneme_testi3/test3_5.jpg",
   ),
   SoruModeli(
     "25) Aşağıdakilerden hangisi aracımızda kademeli güç artırımı ve geri gitmemize yarayan düzenektir?",
@@ -279,95 +284,218 @@ List<SoruModeli> sorular3 = [
       "Farların kullanılacağı yer ve hallere": true,
       "Geçiş üstünlüğü bulunan araçlara yol verilmesi kuralına": false,
     },
+    resim: "assets/images/deneme_testi3/test3_6.jpg",
   ),
   SoruModeli(
-    "30) ?",
+    "30) Aşağıdakilerden hangisinde dönüş ışıklarının kullanılması yasaktır?",
     {
-      "": false,
-      "": false,
-      "": true,
-      "": false,
+      "Şerit değiştirmelerde": false,
+      "Sürücülere 'geç' mesajının verilmesinde": false,
+      "Kavşaklarda sağa ve sola dönüşlerde": true,
+      "Bir aracın geçilmesi esnasında": false,
     },
   ),
   SoruModeli(
-    "3) ?",
+    "31) Şekildeki gibi eğimsiz iki yönlü dar yoldaki karşılaşmada 2 numaralı aracın "
+        "sürücüsü ne yapmalıdır?",
     {
-      "": false,
-      "": false,
-      "": true,
-      "": false,
+      "U dönüşü yapmalı": false,
+      "1 numaralı araca yol vermeli": false,
+      "İlk geçiş hakkını kendisi kullanmalı": true,
+      "1 numaralı aracın sürücüsünü ikaz edip durdurmalı": false,
+    },
+    resim: "assets/images/deneme_testi3/test3_7.jpg",
+  ),
+  SoruModeli(
+    "32) Bir aracın güvenle taşıyabileceği en çok yük ağırlığına veya yolcu ve hizmetli "
+        "sayısına ne denir?",
+    {
+      "Gabari": false,
+      "Taşıma sınırı": false,
+      "Dingil ağırlığı": true,
+      "Azami ağırlık": false,
     },
   ),
   SoruModeli(
-    "3) ?",
+    "33) Aşağıdakilerden hangisi özel araçların gereksiz kullanılmasının sonuçlarındandır?",
     {
-      "": false,
-      "": false,
-      "": true,
-      "": false,
+      "Yakıt tüketiminin azalması": false,
+      "Gürültü kirliliğinin önlenmesi": false,
+      "Zararlı gaz salınımının artması": true,
+      "Trafik yoğunluğunun azalması": false,
     },
   ),
   SoruModeli(
-    "3) ?",
+    "34) Şekildeki karayolu bölümünde hangi numaralı taşıtın ok yönündeki hareketi yasaktır?",
     {
-      "": false,
-      "": false,
-      "": true,
-      "": false,
+      "1": false,
+      "2": false,
+      "3": true,
+      "4": false,
+    },
+    resim: "assets/images/deneme_testi3/test3_8.jpg",
+  ),
+  SoruModeli(
+    "35) Araçta çalışmayan bir elektrik sistemi olduğu zaman ilk kontrol edilmesi gereken "
+        "yer aşağıdakilerden hangisidir?",
+    {
+      "Fan motoru": false,
+      "Far anahtarı": false,
+      "Sigorta kutusu": true,
+      "Yakıt göstergesi": false,
     },
   ),
   SoruModeli(
-    "3) ?",
+    "36) Aşağıdakilerden hangisi bilinç kaybının başlıca nedenlerinden biri değildir?",
     {
-      "": false,
-      "": false,
-      "": true,
-      "": false,
+      "Bayılma": false,
+      "Beyin kanaması": false,
+      "Yüzün kızarması": true,
+      "Aşırı dozda alkol alımı": false,
     },
   ),
   SoruModeli(
-    "3) ?",
+    "37) Motorda yağlama sisteminin amacı aşağıdakilerden hangisidir?",
     {
-      "": false,
-      "": false,
-      "": true,
-      "": false,
+      "Yakıt tüketimini arttırmak": false,
+      "Motorun erken ısınmasını sağlamak": false,
+      "Debriyaj balatasının aşınmasını önlemek": true,
+      "Sürtünmeyi azaltarak parçaların ömrünü uzatmak": false,
     },
   ),
   SoruModeli(
-    "3) ?",
+    "38) Aşağıdakilerden hangisi motor yağının kontrolü sırasında yapılması gereken "
+        "işlemlerden biri değildir?",
     {
-      "": false,
-      "": false,
-      "": true,
-      "": false,
+      "Yağ seviyesi kontrolü": false,
+      "Hava filtresi kontrolü": false,
+      "Yağ kaçağı kontrolü": true,
+      "Yağ rengi kontrolü": false,
     },
   ),
   SoruModeli(
-    "3) ?",
+    "39) Egzozdan çıkan zararlı maddeleri zararsız hale dönüştürebilmek için araçların "
+        "egzoz sistemine aşağıdakilerden hangisi takılır?",
     {
-      "": false,
-      "": false,
-      "": true,
-      "": false,
+      "Egzoz susturucu": false,
+      "Katalitik konvertör": false,
+      "Egzoz manifoldu": true,
+      "Egzoz subapı": false,
     },
   ),
   SoruModeli(
-    "3) ?",
+    "40) Aracın gösterge panelinde yukarıdaki ikaz ışığının yanıyor olması neyi gösterir?",
     {
-      "": false,
-      "": false,
-      "": true,
-      "": false,
+      "Fren balatasının fazlasıyla aşındığını \nve değiştirilmesi gerektiğini": false,
+      "El freninin çekili olduğunu": false,
+      "Akünün kendisinde veya alternatörde bir sorun olduğunu": true,
+      "Yağ basıncının düştüğünü": false,
+    },
+    resim: "assets/images/deneme_testi3/test3_9.jpg",
+  ),
+  SoruModeli(
+    "41) Aşağıdakilerden hangisi diferansiyelin görevlerinden biri değildir?",
+    {
+      "Yakıt tasarrufu sağlamak": false,
+      "Tekerleklere güç ve tork dağılımını sağlamak": false,
+      "Şafttan gelen torku artırarak akslara iletmek": true,
+      "Virajda dış tekerleğin iç tekerlekten fazla dönmesini sağlamak": false,
     },
   ),
   SoruModeli(
-    "3) ?",
+    "42) Aşağıdakilerden hangisi virajlarda çekici tekerleklerin farklı hızlarda dönmesini sağlar?",
     {
-      "": false,
-      "": false,
-      "": true,
-      "": false,
+      "Amortisör": false,
+      "Direksiyon": false,
+      "Diferansiyel": true,
+      "Kilometre sayacı": false,
+    },
+  ),
+  SoruModeli(
+    "43) Aracın lastikleri ne zaman kontrol edilir?",
+    {
+      "Günde bir": false,
+      "Haftada bir": false,
+      "Altı ayda bir": true,
+      "Araca binileceği zaman": false,
+    },
+  ),
+  SoruModeli(
+    "I.Şarj \nII.ABS \n III.Yağ Basıncı \n\n"
+        "44) Verilen ikaz lambalarından hangilerinin araç gösterge panelinde "
+        "yanması aracın derhal durdurulması gerçekleşir?",
+    {
+      "Yalnız III": false,
+      "I ve II": false,
+      "I ve III": true,
+      "II ve III": false,
+    },
+  ),
+  SoruModeli(
+    "45) Aşağıdakilerden hangisi trafik kazalarının topluma verdiği zararlardan biri değildir?",
+    {
+      "Üretim ve refah kayıplarının yaşanması": false,
+      "Karayollarının zamanından önce yıpranması": false,
+      "Uzun vadede kalkınmaya olumlu etki yapması": true,
+      "Açılan çok sayıda dava ile yargı sisteminde \niş yükünün artması": false,
+    },
+  ),
+  SoruModeli(
+    "   Aracını kaldırıma park etmiş bir sürücü, diğer yol kullanıcılarının kaldırımı kullanmasına "
+        "engel olduğu gibi kaldırımı kullanamayan yayaların araç yoluna çıkmalarına neden olmaktadır. "
+        "Oysaki ______ düzeyi yüksek bir sürücü, kendini yaya olan yol kullanıcısının yerine koyar "
+        "ve aracını kaldırıma park etmez.\n\n"
+        "46) Verilen ifadede boş bırakılan yere aşağıdakilerden hangisi yazılmalıdır?",
+    {
+      "Öfke": false,
+      "Empati": false,
+      "Bencillik": true,
+      "Sorumsuzluk": false,
+    },
+  ),
+  SoruModeli(
+    "47) Aracı arıza yaptığı için yolda kalmış ve trafiğin aksamasına sebep olmuş sürücünün "
+        "sorununa, yoldan geçen diğer bir sürücünün durup çözüm bulması hali, trafikte hangi "
+        "temel değere sahip olunduğuna örnektir?",
+    {
+      "Yardımlaşmaya": false,
+      "Öfke duygusuna": false,
+      "Bencil davranmaya": true,
+      "Aşırı tepki göstermeye": false,
+    },
+  ),
+  SoruModeli(
+    "48) Sürücüler, beden dilini ve konuşma üslubuna da dikkate alarak trafik adabı açısından "
+        "başarılı iletişim kurma becerilerini geliştirmek için aşağıdakilerden hangisini yapmalıdır?",
+    {
+      "İnsanların değişebildiğine inanmalıdır": false,
+      "Dinlerken aynı zamanda değerlendirme eğiliminde olmalıdır": false,
+      "Karşısındakinin kişiliğini sevmediğinde zihnini ona kapatmalıdır": true,
+      "Tek bir olayın, birini anlamak için yeterli \nbir örnek olduğunu düşünmelidir": false,
+    },
+  ),
+  SoruModeli(
+    "   Bir olay ya da durumda, karşımızdaki kişi hakkında herhangi bir yargıda bulunmadan "
+        "önce kendimizi onun yerine koyarak olayı/durumu onun gibi yaşamamız anlamına gelmektedir.\n\n"
+        "49) Yukarıdaki açıklama, trafik adabı açısından da ciddi bir öneme sahip olan "
+        "hangi davranış özelliğine aittir?",
+    {
+      "Öfke": false,
+      "Empati": false,
+      "Bastırma": true,
+      "Engelleme": false,
+    },
+  ),
+  SoruModeli(
+    "I.Geçiş üstünlüğüne sahip araçlara yol vermek\n"
+        "II.Aşırı hız yaparak diğer sürücülerin dikkatini dağıtmak\n"
+        "III.Engeli olmadığı halde engelli kişiler için ayrılmış yerlere park etmek\n\n"
+        "50) Yukarıdakilerden hangileri trafikte bireye yapılan hak ihlallerindendir?",
+    {
+      "Yalnız I": false,
+      "I ve II": false,
+      "II ve III": true,
+      "I, II ve III": false,
     },
   ),
 ];
