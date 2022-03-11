@@ -32,88 +32,96 @@ List<SoruModeli> sorular4 = [
     },
   ),
   SoruModeli(
-    "4) ?",
+    "4) Kazazedenin ağız bölgesine bir cam parçası ya da ayna yaklaştırarak buharlanıp buharlanmadığına "
+        "bakılması, 'Bak-Dinle-Hisset' yönteminin hangi aşamasını oluşturur?",
     {
-      "": false,
-      "": false,
-      "": false,
-      "": false,
+      "Dinle": false,
+      "Bak": false,
+      "Hisset": false,
+      "Dinle-Hisset": false,
     },
   ),
   SoruModeli(
-    "1) ?",
+    "5) Aşağıdaki durumların hangisinde kazazedenin bacaklarının 30 cm yukarı kaldırılması "
+        "doğru bir ilk yardım uygulamasıdır?",
     {
-      "": false,
-      "": false,
-      "": false,
-      "": false,
+      "Şok durumu": false,
+      "Beyin kanaması": false,
+      "Ayak bölgesinden yılan sokması": false,
+      "Akciğer zedelenmesi ve kanaması": false,
     },
   ),
   SoruModeli(
-    "1) ?",
+    "6) Aşağıdakilerden hangisi burkulmalarda yapılması gereken ilk yardım uygulamalarındandır?",
     {
-      "": false,
-      "": false,
-      "": false,
-      "": false,
+      "Sıkıştırıcı bir bandajla burkulan eklemin \ntespit edilmesi": false,
+      "Şişliği azaltmak için bölgenin vücut seviyesinden \naşağıya indirilmesi": false,
+      "Burkulan eklem yüzeyinin sürekli hareket ettirilmesi": false,
+      "Boğucu sargı (turnike) uygulanması": false,
     },
   ),
   SoruModeli(
-    "1) ?",
+    "7) Aşağıdakilerden hangisi sara krizi yaşayan kazazedeye yapılması gereken ilk "
+        "yardım uygulamalarındandır?",
     {
-      "": false,
-      "": false,
-      "": false,
-      "": false,
+      "Krizin kendiliğinden geçmesinin beklenmesi": false,
+      "Kilitlenmiş çenesinin zorla açılmaya çalışılması": false,
+      "El, kol ve bacaklarının bağlanması": false,
+      "Şekerli içecekler içirilmesi": false,
     },
   ),
   SoruModeli(
-    "1) ?",
+    "I.Öz eleştiri yapabilmek\nII.Risk almaya meyilli olmak\n"
+        "III.Trafikte diğer araç sürücülerini taciz etmek\n"
+        "IV.Hata yapan sürücüleri uygun bir dille uyarmak\n\n"
+        "8) Yukarıdakilerden hangileri güvenli sürüşü olumsuz yönde etkileyen kişilik "
+        "özelliklerindendir?",
     {
-      "": false,
-      "": false,
-      "": false,
-      "": false,
+      "I ve IV": false,
+      "II ve III": false,
+      "I, II ve III": false,
+      "II, III ve IV": false,
     },
   ),
   SoruModeli(
-    "1) ?",
+    "9) Şekildeki Baş-Çene pozisyonunun aşağıdaki durumların hangisinde verilmesi sakıncalıdır?",
     {
-      "": false,
-      "": false,
-      "": false,
-      "": false,
+      "Solunum güçlüğü olanlarda": false,
+      "Dilin geriye kaçıp hava yolunu tıkadığı durumlarda": false,
+      "Ağızdan ağıza yapılan suni solunum uygulamalarında": false,
+      "Boyun omurlarında hasar olanlarda": false,
     },
   ),
   SoruModeli(
-    "1) ?",
+    "10) 'Göğüste kuvvetli ağrı nedenleri' arasında en sık görüleni aşağıdakilerden "
+        "hangisidir?",
     {
-      "": false,
-      "": false,
-      "": false,
-      "": false,
+      "Kalp krizi": false,
+      "Yüksek ateş": false,
+      "Görme bozukluğu": false,
+      "Ayak bileğinde burkulma": false,
     },
   ),
   SoruModeli(
-    "1) ?",
+    "11) Aşağıdakilerden hangisi burkulmalarda uygulanan ilk yardım ilkeleri arasında yer alır?",
     {
-      "": false,
-      "": false,
-      "": false,
-      "": false,
+      "Burkulan eklemin kalp seviyesinden aşağıda tutulması": false,
+      "Burkulan eklemin sıkıştırıcı bir bandajla tespit edilmesi": false,
+      "Burkulan eklemin sürekli hareket ettirilmesi": false,
+      "Burkulan ekleme turnike uygulanması": false,
     },
   ),
   SoruModeli(
-    "1) ?",
+    "12) Beyin, insan vücudundaki hangi sistemin bir parçasıdır?",
     {
-      "": false,
-      "": false,
-      "": false,
-      "": false,
+      "Dolaşım sisteminin": false,
+      "Sindirim sisteminin": false,
+      "Hareket sisteminin": false,
+      "Sinir sisteminin": false,
     },
   ),
   SoruModeli(
-    "1) ?",
+    "13) ?",
     {
       "": false,
       "": false,
