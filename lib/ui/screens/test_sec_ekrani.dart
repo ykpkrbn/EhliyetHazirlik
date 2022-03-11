@@ -19,6 +19,8 @@ class _TestSecEkraniState extends State<TestSecEkrani> {
       "/SoruCevap",
       "/SoruCevap2",
       "/SoruCevap3",
+      "/SoruCevap4",
+      "/SoruCevap5",
       "/SkorlarEkrani",
     ];
   }

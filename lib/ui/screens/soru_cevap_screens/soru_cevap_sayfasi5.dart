@@ -1,16 +1,16 @@
 import 'package:ehliyet_hazirlik/ui/screens/sonuc_ekrani.dart';
 import 'package:flutter/material.dart';
-import '../../../core/data/soru_listesi4.dart';
+import '../../../core/data/soru_listesi5.dart';
 import '../../constant/renkler.dart';
 
-class SoruCevap4 extends StatefulWidget {
-  const SoruCevap4({Key? key}) : super(key: key);
+class SoruCevap5 extends StatefulWidget {
+  const SoruCevap5({Key? key}) : super(key: key);
 
   @override
-  _SoruCevap4State createState() => _SoruCevap4State();
+  _SoruCevap5State createState() => _SoruCevap5State();
 }
 
-class _SoruCevap4State extends State<SoruCevap4>
+class _SoruCevap5State extends State<SoruCevap5>
     with SingleTickerProviderStateMixin {
   final PageController? _controller = PageController(initialPage: 0);
   bool? isPressed = false;
@@ -30,7 +30,7 @@ class _SoruCevap4State extends State<SoruCevap4>
               isPressed = false;
             });
           },
-          itemCount: sorular4.length,
+          itemCount: sorular5.length,
           itemBuilder: (context, index) {
             return ListView(
               physics: const BouncingScrollPhysics(),
@@ -38,7 +38,7 @@ class _SoruCevap4State extends State<SoruCevap4>
                 SizedBox(
                   width: double.infinity,
                   child: Text(
-                    "Soru ${index + 1} / ${sorular4.length}",
+                    "Soru ${index + 1} / ${sorular5.length}",
                     style: TextStyle(
                       color: beyazRenk,
                       fontWeight: FontWeight.w300,
@@ -53,20 +53,20 @@ class _SoruCevap4State extends State<SoruCevap4>
                 ),
                 const SizedBox(height: 40),
                 Text(
-                  sorular4[index].soru!,
+                  sorular5[index].soru!,
                   style: TextStyle(
                     color: beyazRenk,
                     fontSize: Theme.of(context).textTheme.headline6?.fontSize,
                   ),
                 ),
                 const SizedBox(height: 35),
-                sorular4[index].resim == null
+                sorular5[index].resim == null
                     ? const Text("")
-                    : Image.asset(sorular4[index].resim!),
-                sorular4[index].resim == null
+                    : Image.asset(sorular5[index].resim!),
+                sorular5[index].resim == null
                     ? const Text("")
                     : const SizedBox(height: 35),
-                for (int i = 0; i < sorular4[index].cevap!.length; i++)
+                for (int i = 0; i < sorular5[index].cevap!.length; i++)
                   Stack(
                     children: [
                       Positioned(
@@ -80,7 +80,7 @@ class _SoruCevap4State extends State<SoruCevap4>
                               setState(() {
                                 isPressed = true;
                               });
-                              if (sorular4[index]
+                              if (sorular5[index]
                                   .cevap!
                                   .entries
                                   .toList()[i]
@@ -92,7 +92,7 @@ class _SoruCevap4State extends State<SoruCevap4>
                             },
                             padding: const EdgeInsets.symmetric(vertical: 18),
                             color: isPressed!
-                                ? sorular4[index]
+                                ? sorular5[index]
                                 .cevap!
                                 .entries
                                 .toList()[i]
@@ -104,7 +104,7 @@ class _SoruCevap4State extends State<SoruCevap4>
                             child: FittedBox(
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 3.0),
-                                child: Text(sorular4[index].cevap!.keys.toList()[i],
+                                child: Text(sorular5[index].cevap!.keys.toList()[i],
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       color: beyazRenk,
@@ -164,7 +164,7 @@ class _SoruCevap4State extends State<SoruCevap4>
                     ),
                     OutlinedButton(
                       onPressed: isPressed!
-                          ? index + 1 == sorular4.length
+                          ? index + 1 == sorular5.length
                           ? () {
                         Navigator.push(
                             context,
@@ -180,7 +180,7 @@ class _SoruCevap4State extends State<SoruCevap4>
                             curve: Curves.linear);
                       }
                           : null,
-                      child: Text(index + 1 == sorular4.length
+                      child: Text(index + 1 == sorular5.length
                           ? "Sınavı Tamamla"
                           : "Sonraki Soru"),
                     ),
