@@ -6,8 +6,8 @@ List<SoruModeli> sorular3 = [
     {
       "Dik oturuş": false,
       "Yarı oturuş": false,
-      "Yarı yüzüstü yan yatış": true,
-      "Sırtüstü yatış": false,
+      "Yarı yüzüstü yan yatış": false,
+      "Sırtüstü yatış": true,
     },
   ),
   SoruModeli(
@@ -17,17 +17,17 @@ List<SoruModeli> sorular3 = [
         "özelliklerindendir?",
     {
       "I ve IV": false,
-      "II ve III": false,
-      "I, II ve III": true,
+      "II ve III": true,
+      "I, II ve III": false,
       "II, III ve IV": false,
     },
   ),
   SoruModeli(
     "3) Aşağıdakilerden hangisinin ilk yardım çantasında bulundurulması zorunludur?",
     {
-      "Gazlı bez": false,
+      "Gazlı bez": true,
       "Oksijenli su": false,
-      "Kağıt mendil": true,
+      "Kağıt mendil": false,
       "Ağrı kesici ilaç": false,
     },
   ),
@@ -36,8 +36,8 @@ List<SoruModeli> sorular3 = [
     {
       "Huzursuzluk": false,
       "Baş dönmesi": false,
-      "Dudak çevresinde morarma": true,
-      "Ciltte ısı artışı, kızarıklık ve kuruluk": false,
+      "Dudak çevresinde morarma": false,
+      "Ciltte ısı artışı, kızarıklık ve kuruluk": true,
     },
   ),
   SoruModeli(
@@ -65,9 +65,9 @@ List<SoruModeli> sorular3 = [
   SoruModeli(
     "7) Araçlardaki egzoz susturucusu için aşağıdakilerden hangisi söylenebilir?",
     {
-      "Kış aylarında yakıttan tasarruf sağlar": false,
+      "Kış aylarında yakıttan tasarruf sağlar": true,
       "Motor hararet yaptığında çıkarılması uygundur": false,
-      "Yaz aylarında kullanılması motora zarar verir": true,
+      "Yaz aylarında kullanılması motora zarar verir": false,
       "Araçlardan kesinlikle çıkarılmaz": false,
     },
   ),
@@ -85,8 +85,8 @@ List<SoruModeli> sorular3 = [
     {
       "Baş geride yarı oturuş": false,
       "Sırtüstü yatış": false,
-      "Dik oturuş": true,
-      "Yan yatış": false,
+      "Dik oturuş": false,
+      "Yan yatış": true,
     },
   ),
   SoruModeli(
@@ -94,9 +94,9 @@ List<SoruModeli> sorular3 = [
         "renginin morardığını ve acı çekerek ellerini boğazına götürdüğünü gözlemlediniz.\n\n"
         "10) Bu belirtiler kazazedede hangi tür tıkanma olduğunu gösterir?",
     {
-      "Tam tıkanma": false,
+      "Tam tıkanma": true,
       "Kısmi tıkanma": false,
-      "Damar tıkanması": true,
+      "Damar tıkanması": false,
       "Solunum durması": false,
     },
   ),
@@ -113,8 +113,8 @@ List<SoruModeli> sorular3 = [
     "12) Aşağıdakilerden hangisi bilinç kaybının en ileri durumudur?",
     {
       "Şok": false,
-      "Koma": false,
-      "Üşüme": true,
+      "Koma": true,
+      "Üşüme": false,
       "Bayılma": false,
     },
   ),
@@ -134,8 +134,8 @@ List<SoruModeli> sorular3 = [
     {
       "2": false,
       "3": false,
-      "4": true,
-      "5": false,
+      "4": false,
+      "5": true,
     },
   ),
   SoruModeli(
@@ -143,17 +143,17 @@ List<SoruModeli> sorular3 = [
     {
       "Otobüs": false,
       "Kamyon": false,
-      "Otomobil": true,
-      "Motosiklet": false,
+      "Otomobil": false,
+      "Motosiklet": true,
     },
     resim: "assets/images/deneme_testi3/test3_1.jpg",
   ),
   SoruModeli(
     "16) Aşağıdakilerden hangisi çevreye duyarlı bir davranış değildir?",
     {
-      "Sigara külü ve izmaritlerinin veya başka şeylerin yola atılıp dökülmesi": false,
+      "Sigara külü ve izmaritlerinin veya başka şeylerin yola atılıp dökülmesi": true,
       "Bir yere giderken toplu taşıma araçlarının kullanılması": false,
-      "Trafiğin yoğun olduğu saatlerde trafiğe çıkılmaması": true,
+      "Trafiğin yoğun olduğu saatlerde trafiğe çıkılmaması": false,
       "Sürücünün en kısa ve en uygun yolu kullanması": false,
     },
   ),
@@ -162,8 +162,8 @@ List<SoruModeli> sorular3 = [
     {
       "Sahibi değiştiğinde": false,
       "Sigorta süresi bittiğinde": false,
-      "Tescil belgesi değiştirildiğinde": true,
-      "Üzerinde teknik değişiklik yapıldığında": false,
+      "Tescil belgesi değiştirildiğinde": false,
+      "Üzerinde teknik değişiklik yapıldığında": true,
     },
   ),
   SoruModeli(
@@ -190,8 +190,8 @@ List<SoruModeli> sorular3 = [
     "20) Şekildeki trafik işareti aşağıdakilerden hangisini bildirir?",
     {
       "Sola tehlikeli devamlı virajı": false,
-      "Dönel kavşağa yaklaşıldığını": false,
-      "Tünele yaklaşıldığını": true,
+      "Dönel kavşağa yaklaşıldığını": true,
+      "Tünele yaklaşıldığını": false,
       "Sola mecburi yönü": false,
     },
     resim: "assets/images/deneme_testi3/test3_3.jpg",
@@ -200,18 +200,18 @@ List<SoruModeli> sorular3 = [
     "21) Aksine bir durum yoksa, ışıklı trafik işaret cihazında kırmızı ışık yanmakta ise "
         "sürücü ne yapmalıdır?",
     {
-      "Aracını durdurmalıdır": false,
+      "Aracını durdurmalıdır": true,
       "Durmadan geçmeli": false,
-      "Gelen araç yoksa dikkatli geçmeli": true,
+      "Gelen araç yoksa dikkatli geçmeli": false,
       "Yayalar geçebileceği için yavaş gitmeli": false,
     },
   ),
   SoruModeli(
     "22) Şekildeki trafik işareti aşağıdakilerden hangisini bildirir?",
     {
-      "Tehlikeli viraj yön levhası": false,
+      "Tehlikeli viraj yön levhası": true,
       "Dönel kavşak": false,
-      "Kontrolsüz demiryolu geçidi": true,
+      "Kontrolsüz demiryolu geçidi": false,
       "Sola dönülmez": false,
     },
     resim: "assets/images/deneme_testi3/test3_4.jpg",
@@ -222,8 +222,8 @@ List<SoruModeli> sorular3 = [
     {
       "Trafik suçu": false,
       "Trafik terörü": false,
-      "Trafik kusuru": true,
-      "Trafikten men": false,
+      "Trafik kusuru": false,
+      "Trafikten men": true,
     },
   ),
   SoruModeli(
@@ -231,8 +231,8 @@ List<SoruModeli> sorular3 = [
     {
       "Demiryolu alt geçidine": false,
       "Demiryolu üst geçidine": false,
-      "Kontrollü demiryolu geçidine": true,
-      "Kontrolsüz demiryolu geçidine": false,
+      "Kontrollü demiryolu geçidine": false,
+      "Kontrolsüz demiryolu geçidine": true,
     },
     resim: "assets/images/deneme_testi3/test3_5.jpg",
   ),
@@ -259,9 +259,9 @@ List<SoruModeli> sorular3 = [
     "27) Araçların muayene süresi dolmasa bile, aşağıdaki hallerin hangisinden dolayı "
         "özel muayenesi zorunludur?",
     {
-      "Üzerinde teknik değişiklik yapıldığında": false,
+      "Üzerinde teknik değişiklik yapıldığında": true,
       "Sürücüsü veya işleticisi değiştiğinde": false,
-      "Motoru bakımdan geçirildiğinde": true,
+      "Motoru bakımdan geçirildiğinde": false,
       "Sahibi değiştiğinde": false,
     },
   ),
@@ -280,8 +280,8 @@ List<SoruModeli> sorular3 = [
         "gelmiş olabilir?",
     {
       "Takip mesafesine": false,
-      "Kavşaklarda ilk geçiş hakkına": false,
-      "Farların kullanılacağı yer ve hallere": true,
+      "Kavşaklarda ilk geçiş hakkına": true,
+      "Farların kullanılacağı yer ve hallere": false,
       "Geçiş üstünlüğü bulunan araçlara yol verilmesi kuralına": false,
     },
     resim: "assets/images/deneme_testi3/test3_6.jpg",
@@ -290,8 +290,8 @@ List<SoruModeli> sorular3 = [
     "30) Aşağıdakilerden hangisinde dönüş ışıklarının kullanılması yasaktır?",
     {
       "Şerit değiştirmelerde": false,
-      "Sürücülere 'geç' mesajının verilmesinde": false,
-      "Kavşaklarda sağa ve sola dönüşlerde": true,
+      "Sürücülere 'geç' mesajının verilmesinde": true,
+      "Kavşaklarda sağa ve sola dönüşlerde": false,
       "Bir aracın geçilmesi esnasında": false,
     },
   ),
@@ -300,8 +300,8 @@ List<SoruModeli> sorular3 = [
         "sürücüsü ne yapmalıdır?",
     {
       "U dönüşü yapmalı": false,
-      "1 numaralı araca yol vermeli": false,
-      "İlk geçiş hakkını kendisi kullanmalı": true,
+      "1 numaralı araca yol vermeli": true,
+      "İlk geçiş hakkını kendisi kullanmalı": false,
       "1 numaralı aracın sürücüsünü ikaz edip durdurmalı": false,
     },
     resim: "assets/images/deneme_testi3/test3_7.jpg",
@@ -311,8 +311,8 @@ List<SoruModeli> sorular3 = [
         "sayısına ne denir?",
     {
       "Gabari": false,
-      "Taşıma sınırı": false,
-      "Dingil ağırlığı": true,
+      "Taşıma sınırı": true,
+      "Dingil ağırlığı": false,
       "Azami ağırlık": false,
     },
   ),
@@ -329,8 +329,8 @@ List<SoruModeli> sorular3 = [
     "34) Şekildeki karayolu bölümünde hangi numaralı taşıtın ok yönündeki hareketi yasaktır?",
     {
       "1": false,
-      "2": false,
-      "3": true,
+      "2": true,
+      "3": false,
       "4": false,
     },
     resim: "assets/images/deneme_testi3/test3_8.jpg",
@@ -359,8 +359,8 @@ List<SoruModeli> sorular3 = [
     {
       "Yakıt tüketimini arttırmak": false,
       "Motorun erken ısınmasını sağlamak": false,
-      "Debriyaj balatasının aşınmasını önlemek": true,
-      "Sürtünmeyi azaltarak parçaların ömrünü uzatmak": false,
+      "Debriyaj balatasının aşınmasını önlemek": false,
+      "Sürtünmeyi azaltarak parçaların ömrünü uzatmak": true,
     },
   ),
   SoruModeli(
@@ -368,8 +368,8 @@ List<SoruModeli> sorular3 = [
         "işlemlerden biri değildir?",
     {
       "Yağ seviyesi kontrolü": false,
-      "Hava filtresi kontrolü": false,
-      "Yağ kaçağı kontrolü": true,
+      "Hava filtresi kontrolü": true,
+      "Yağ kaçağı kontrolü": false,
       "Yağ rengi kontrolü": false,
     },
   ),
@@ -378,8 +378,8 @@ List<SoruModeli> sorular3 = [
         "egzoz sistemine aşağıdakilerden hangisi takılır?",
     {
       "Egzoz susturucu": false,
-      "Katalitik konvertör": false,
-      "Egzoz manifoldu": true,
+      "Katalitik konvertör": true,
+      "Egzoz manifoldu": false,
       "Egzoz subapı": false,
     },
   ),
@@ -387,8 +387,8 @@ List<SoruModeli> sorular3 = [
     "40) Aracın gösterge panelinde yukarıdaki ikaz ışığının yanıyor olması neyi gösterir?",
     {
       "Fren balatasının fazlasıyla aşındığını \nve değiştirilmesi gerektiğini": false,
-      "El freninin çekili olduğunu": false,
-      "Akünün kendisinde veya alternatörde bir sorun olduğunu": true,
+      "El freninin çekili olduğunu": true,
+      "Akünün kendisinde veya alternatörde bir sorun olduğunu": false,
       "Yağ basıncının düştüğünü": false,
     },
     resim: "assets/images/deneme_testi3/test3_9.jpg",
@@ -396,9 +396,9 @@ List<SoruModeli> sorular3 = [
   SoruModeli(
     "41) Aşağıdakilerden hangisi diferansiyelin görevlerinden biri değildir?",
     {
-      "Yakıt tasarrufu sağlamak": false,
+      "Yakıt tasarrufu sağlamak": true,
       "Tekerleklere güç ve tork dağılımını sağlamak": false,
-      "Şafttan gelen torku artırarak akslara iletmek": true,
+      "Şafttan gelen torku artırarak akslara iletmek": false,
       "Virajda dış tekerleğin iç tekerlekten fazla dönmesini sağlamak": false,
     },
   ),
@@ -416,8 +416,8 @@ List<SoruModeli> sorular3 = [
     {
       "Günde bir": false,
       "Haftada bir": false,
-      "Altı ayda bir": true,
-      "Araca binileceği zaman": false,
+      "Altı ayda bir": false,
+      "Araca binileceği zaman": true,
     },
   ),
   SoruModeli(
@@ -448,8 +448,8 @@ List<SoruModeli> sorular3 = [
         "46) Verilen ifadede boş bırakılan yere aşağıdakilerden hangisi yazılmalıdır?",
     {
       "Öfke": false,
-      "Empati": false,
-      "Bencillik": true,
+      "Empati": true,
+      "Bencillik": false,
       "Sorumsuzluk": false,
     },
   ),
@@ -458,9 +458,9 @@ List<SoruModeli> sorular3 = [
         "sorununa, yoldan geçen diğer bir sürücünün durup çözüm bulması hali, trafikte hangi "
         "temel değere sahip olunduğuna örnektir?",
     {
-      "Yardımlaşmaya": false,
+      "Yardımlaşmaya": true,
       "Öfke duygusuna": false,
-      "Bencil davranmaya": true,
+      "Bencil davranmaya": false,
       "Aşırı tepki göstermeye": false,
     },
   ),
@@ -468,9 +468,9 @@ List<SoruModeli> sorular3 = [
     "48) Sürücüler, beden dilini ve konuşma üslubuna da dikkate alarak trafik adabı açısından "
         "başarılı iletişim kurma becerilerini geliştirmek için aşağıdakilerden hangisini yapmalıdır?",
     {
-      "İnsanların değişebildiğine inanmalıdır": false,
+      "İnsanların değişebildiğine inanmalıdır": true,
       "Dinlerken aynı zamanda değerlendirme eğiliminde olmalıdır": false,
-      "Karşısındakinin kişiliğini sevmediğinde zihnini ona kapatmalıdır": true,
+      "Karşısındakinin kişiliğini sevmediğinde zihnini ona kapatmalıdır": false,
       "Tek bir olayın, birini anlamak için yeterli \nbir örnek olduğunu düşünmelidir": false,
     },
   ),
@@ -481,8 +481,8 @@ List<SoruModeli> sorular3 = [
         "hangi davranış özelliğine aittir?",
     {
       "Öfke": false,
-      "Empati": false,
-      "Bastırma": true,
+      "Empati": true,
+      "Bastırma": false,
       "Engelleme": false,
     },
   ),
