@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Ehliyete Hazırlık",
+      title: "Ehliyet Sende",
       initialRoute: "/",
       routes: myRoute
     );

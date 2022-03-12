@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../core/db/db.dart';
 import '../../core/model/soru_modeli.dart';
+import '../constant/image.dart';
 import '../constant/renkler.dart';
 
 class SonucEkrani extends StatelessWidget {
@@ -20,19 +21,21 @@ class SonucEkrani extends StatelessWidget {
         children: [
           Text(
             score < 70
-                ? "Maalesef Sınavda kaldınız. Tekrar hazırlanmakta fayda var"
-                : "Tebrikler Sınavı geçtiniz",
+                ? "Maalesef sınavda başarısız oldunuz. Tekrar hazırlanmakta fayda var"
+                : "Tebrikler sınavı geçtiniz",
             textAlign: TextAlign.center,
             style: TextStyle(
                 fontSize: Theme.of(context).textTheme.headline3?.fontSize,
-                color: beyazRenk, fontWeight: FontWeight.bold),
+                color: beyazRenk,
+                fontWeight: FontWeight.bold),
           ),
           Text(
             "Skorunuz",
             textAlign: TextAlign.center,
             style: TextStyle(
                 fontSize: Theme.of(context).textTheme.headline3?.fontSize,
-                color: beyazRenk, fontWeight: FontWeight.bold),
+                color: beyazRenk,
+                fontWeight: FontWeight.bold),
           ),
           Text(
             score.toString(),
@@ -41,56 +44,66 @@ class SonucEkrani extends StatelessWidget {
                 color: yesilRenk, fontSize: 80, fontWeight: FontWeight.bold),
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              MaterialButton(
-                onPressed: () {
-                  Scorelar yeniSkorumuz =
-                      Scorelar(score: score, tarih: DateTime.now());
-                  DBProvider.dataBase.skorEkle(yeniSkorumuz);
+              Expanded(
+                child: MaterialButton(
+                  onPressed: () {
+                    Scorelar yeniSkorumuz =
+                        Scorelar(score: score, tarih: DateTime.now());
+                    DBProvider.dataBase.skorEkle(yeniSkorumuz);
 
-                  Navigator.pushNamedAndRemoveUntil(
-                      context, "/SkorlarEkrani", (context) => false);
-                },
-                color: ikinciRenk,
-                shape: const StadiumBorder(),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(
-                    "Skorları \nGöster",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: beyazRenk,
+                    Navigator.pushNamedAndRemoveUntil(
+                        context, "/SkorlarEkrani", (context) => false);
+                  },
+                  color: ikinciRenk,
+                  shape: const StadiumBorder(),
+                  child: FittedBox(
+                    child: Row(
+                      children: [
+                        SizedBox(
+                            height: MediaQuery.of(context).size.height / 8,
+                            child: ResimlerYolu().basarilarim),
+                        Text(
+                          "Skorları \nGöster",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: beyazRenk,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ),
               ),
-              const SizedBox(
-                width: 20,
-              ),
-              MaterialButton(
-                onPressed: () {
-                  Scorelar yeniSkorumuz =
-                      Scorelar(score: score, tarih: DateTime.now());
-                  DBProvider.dataBase.skorEkle(yeniSkorumuz);
+              const SizedBox(width: 8),
+              Expanded(
+                child: MaterialButton(
+                  onPressed: () {
+                    Scorelar yeniSkorumuz =
+                        Scorelar(score: score, tarih: DateTime.now());
+                    DBProvider.dataBase.skorEkle(yeniSkorumuz);
 
-                  Navigator.pushNamedAndRemoveUntil(
-                      context, "/", (context) => false);
-                },
-                color: ikinciRenk,
-                shape: const StadiumBorder(),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
+                    Navigator.pushNamedAndRemoveUntil(
+                        context, "/", (context) => false);
+                  },
+                  color: ikinciRenk,
+                  shape: const StadiumBorder(),
                   child: FittedBox(
-                    child: Text(
-                      "Ana Sayfaya \nGit",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 20,
-                        color: beyazRenk,
-                      ),
+                    child: Row(
+                      children: [
+                        SizedBox(
+                            height: MediaQuery.of(context).size.height / 8,
+                            child: ResimlerYolu().uygulamam),
+                        Text(
+                          "Ana Sayfaya \nGit",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: beyazRenk,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ),
