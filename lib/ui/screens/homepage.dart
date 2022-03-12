@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
-                "Ehliyet \nSınavına \nHazırlık",
+                "Ehliyet Sende",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                     fontSize: 54,
@@ -53,8 +53,7 @@ class _HomePageState extends State<HomePage> {
               ),
               MaterialButton(
                 onPressed: () {
-                  Navigator.pushNamed(context,
-                      "/SkorlarEkrani");
+                  Navigator.pushNamed(context, "/SkorlarEkrani");
                 },
                 color: ikinciRenk,
                 shape: const StadiumBorder(),
